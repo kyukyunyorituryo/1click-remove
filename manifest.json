@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+	"name": "1-click remove",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["http://www.amazon.co.jp/*","https://www.amazon.co.jp/*"],
+			"js": [ "myscript.js"]
+		}
+	]
+}
