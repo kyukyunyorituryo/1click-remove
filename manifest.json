@@ -1,11 +1,24 @@
 {
 	"manifest_version": 2,
 	"name": "1-click remove",
-	"version": "1.0",
+	"version": "1.0.3",
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": "mouse.png",
+		"default_title": "UNLIMITEDの管理"
+	},
 	"content_scripts": [
 		{
-			"matches": ["http://www.amazon.co.jp/*","https://www.amazon.co.jp/*"],
+			"matches": ["https://www.amazon.co.jp/*"],
 			"js": [ "myscript.js"]
 		}
+	],
+	"description": "キンドルアンリミテッドの1クリックで購入を消去する。アイコンをクリクするとキンドルアンリミテッドの管理ページのリンクを表示する。",
+	  "icons": {
+      "128": "mouse.png"
+   },
+   "short_name": "ワンクリ",
+	"permissions": [
+	"activeTab"
 	]
 }
