@@ -20,13 +20,5 @@
    "short_name": "ワンクリ",
 	"permissions": [
 	"activeTab"
-=======
-	"version": "1.0",
-	"content_scripts": [
-		{
-			"matches": ["http://www.amazon.co.jp/*","https://www.amazon.co.jp/*"],
-			"js": [ "myscript.js"]
-		}
->>>>>>> 1ed388098591bd1f95b3a7c3c682a9b2a0de305e
 	]
 }
